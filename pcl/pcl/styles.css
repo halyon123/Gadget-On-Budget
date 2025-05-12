@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header adjustments for Bootstrap */
+header {
+  padding: 1rem;
+}
+
+.header-logo {
+  max-height: 50px; /* Matches HTML */
+}
+
+.user-actions a {
+  margin-left: 0.5rem; /* Bootstrap spacing */
+}
+
+/* Navigation adjustments */
+nav ul {
+  padding: 0;
+}
+
+/* Cart and Orders Icons */
+.cart-icon, .orders-icon {
+  z-index: 1000;
+}
+
+.cart-count, .orders-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/* Section and container styling */
+section {
+  padding: 3rem 0;
+}
+
+/* Product Grid */
+.products-grid .product-card {
+  transition: transform 0.3s;
+}
+
+.products-grid .product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+button, .btn {
+  transition: background-color 0.3s;
+}
+
+/* Category Filter */
+.category-filter .btn {
+  margin: 0.25rem;
+}
+
+/* Blog Section */
+.blog-posts .card {
+  transition: transform 0.3s;
+}
+
+.blog-posts .card:hover {
+  transform: translateY(-5px);
+}
+
+/* Cart Items */
+.cart-item {
+  padding: 1rem;
+}
+
+/* Orders Section */
+.orders-list .order-item {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+}
+
+.footer-logo {
+  max-height: 40px; /* Matches HTML */
+}
+
+.footer-links a {
+  margin: 0 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content, .user-actions {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .cart-icon {
+    top: 110px;
+  }
+
+  .orders-icon {
+    top: 110px;
+    right: 60px !important;
+  }
+}
+
+/* Payment Methods */
+.payment-methods {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.payment-methods h5 {
+  margin-bottom: 1rem;
+}
+
+.payment-methods .form-check {
+  margin-bottom: 0.75rem;
+}
+
+.payment-methods .form-check-input {
+  margin-top: 0.3rem;
+}
+
+.payment-methods .form-check-label {
+  margin-left: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-methods {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget On Budget - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="header-content">
+                <img src="logo.png" alt="Gadget On Budget Logo" class="header-logo" style="max-height: 50px;">
+            </div>
+            <div class="user-actions">
+                <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                <a href="signup.html" class="btn btn-primary">Signup</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link active">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cart-icon position-fixed top-0 end-0 m-3">
+        <a href="cart.html"><i class="bi bi-cart3" style="font-size: 1.5rem;"></i></a>
+        <span class="cart-count badge bg-primary rounded-pill">0</span>
+    </div>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Your Cart</h2>
+        <div class="cart-items mb-4">
+            <!-- Cart items will be dynamically loaded by script.js -->
+        </div>
+        <div class="cart-total text-end fw-bold mb-4">Total: ₹<span>0.00</span></div>
+
+        <!-- Payment Method Section with Bootstrap -->
+        <div class="payment-methods">
+            <h3 class="mb-3">Select Payment Method</h3>
+            <div class="accordion" id="paymentAccordion">
+                <!-- Credit Card Option -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCreditCard">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCreditCard" aria-expanded="true" aria-controls="collapseCreditCard">
+                            Credit/Debit Card
+                        </button>
+                    </h2>
+                    <div id="collapseCreditCard" class="accordion-collapse collapse show" aria-labelledby="headingCreditCard" data-bs-parent="#paymentAccordion">
+                        <div class="accordion-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="cardNumber" class="form-label">Card Number</label>
+                                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="expiryDate" class="form-label">Expiry Date</label>
+                                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cvv" class="form-label">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Pay Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- PayPal Option -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingPaypal">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePaypal" aria-expanded="false" aria-controls="collapsePaypal">
+                            PayPal
+                        </button>
+                    </h2>
+                    <div id="collapsePaypal" class="accordion-collapse collapse" aria-labelledby="headingPaypal" data-bs-parent="#paymentAccordion">
+                        <div class="accordion-body">
+                            <p>Click the button below to proceed with PayPal payment.</p>
+                            <button type="button" class="btn btn-outline-primary">Pay with PayPal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <img src="logo.png" alt="Gadget On Budget Logo" class="footer-logo mb-3" style="max-height: 40px;">
+            <div class="footer-links mb-3">
+                <a href="index.html" class="text-muted mx-2">Home</a>
+                <a href="shop.html" class="text-muted mx-2">Shop</a>
+                <a href="about.html" class="text-muted mx-2">About</a>
+                <a href="contact.html" class="text-muted mx-2">Contact</a>
+                <a href="cart.html" class="text-muted mx-2">Cart</a>
+            </div>
+            <p class="text-muted">© 2025 Gadget On Budget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap Icons for cart icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Add Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget On Budget - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="header-content">
+                <img src="logo.png" alt="Gadget On Budget Logo" class="header-logo" style="max-height: 50px;">
+            </div>
+            <div class="user-actions">
+                <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                <a href="signup.html" class="btn btn-primary">Signup</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                <li class="nav-item"><a href="orders.html" class="nav-link">Orders</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cart-icon position-fixed top-0 end-0 m-3">
+        <a href="cart.html"><i class="bi bi-cart3" style="font-size: 1.5rem;"></i></a>
+        <span class="cart-count badge bg-primary rounded-pill">0</span>
+    </div>
+
+    <div class="orders-icon position-fixed top-0 end-0 m-3" style="right: 60px;">
+        <a href="orders.html"><i class="bi bi-box-seam" style="font-size: 1.5rem;"></i></a>
+        <span class="orders-count badge bg-success rounded-pill">0</span>
+    </div>
+
+    <section id="home" class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="products-grid"></div>
+    </section>
+
+    <section class="about-gadget container my-5">
+        <h2 class="text-center mb-4">Why Choose Gadget On Budget?</h2>
+        <div class="about-content">
+            <div class="card p-4 mb-3">
+                <p>At Gadget On Budget, we specialize in selling high-quality refurbished electronics, offering you the best value for your money.</p>
+            </div>
+            <div class="card p-4 mb-3">
+                <p>Every product undergoes rigorous testing and certification to meet our quality standards.</p>
+            </div>
+            <div class="card p-4">
+                <p>Choose refurbished goods and contribute to a sustainable future by reducing electronic waste.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container my-5">
+        <h2 class="text-center mb-4">Latest Blog Posts</h2>
+        <div class="blog-posts row row-cols-1 row-cols-md-2 g-4">
+            <article class="col">
+                <div class="blog-card card h-100">
+                    <img src="blog1.png" class="card-img-top" alt="Blog 1 - Why Choose Refurbished">
+                    <div class="card-body">
+                        <h3 class="card-title">Why Choose Refurbished? A Smart Choice for Business & the Planet</h3>
+                        <p class="date card-text text-muted">March 15, 2025</p>
+                        <p class="card-text">In today’s fast-paced world, businesses are looking for cost-effective solutions without compromising quality. Choosing refurbished tech is a win-win! Not only does it save money, but it also reduces electronic waste and lowers environmental impact...</p>
+                    </div>
+                    <div class="blog-card-footer card-footer text-muted text-center">Posted by: Admin | Category: Benefits</div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="blog-card card h-100">
+                    <img src="blog 2.png" class="card-img-top" alt="Blog 2 - Things to Consider">
+                    <div class="card-body">
+                        <h3 class="card-title">Things to Consider Before Buying Refurbished Laptops and Gadgets</h3>
+                        <p class="date card-text text-muted">March 12, 2025</p>
+                        <p class="card-text">Buying refurbished electronics is a great way to save money and reduce e-waste, but there are key factors to consider. First, check the seller’s reputation and ensure they offer a warranty or return policy...</p>
+                    </div>
+                    <div class="blog-card-footer card-footer text-muted text-center">Posted by: Admin | Category: Buying Guides</div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="blog-card card h-100">
+                    <img src="blog 3.png" class="card-img-top" alt="Blog 3 - Why Choose Renewed">
+                    <div class="card-body">
+                        <h3 class="card-title">Why Choose Renewed Products?</h3>
+                        <p class="date card-text text-muted">March 10, 2025</p>
+                        <p class="card-text">Buying refurbished or renewed electronics is a smart and sustainable choice. These products are professionally tested and certified, ensuring they function like new...</p>
+                    </div>
+                    <div class="blog-card-footer card-footer text-muted text-center">Posted by: Admin | Category: Sustainability</div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="blog-card card h-100">
+                    <img src="blog 4.png" class="card-img-top" alt="Blog 4 - Go Green with Refurbished Tech">
+                    <div class="card-body">
+                        <h3 class="card-title">Go Green with Refurbished Tech</h3>
+                        <p class="date card-text text-muted">March 8, 2025</p>
+                        <p class="card-text">Choosing refurbished electronics is an eco-friendly step towards a sustainable future. Every refurbished device helps reduce e-waste, conserve natural resources, and minimize carbon footprints...</p>
+                    </div>
+                    <div class="blog-card-footer card-footer text-muted text-center">Posted by: Admin | Category: Eco-Friendly</div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="blog-card card h-100">
+                    <img src="blog 5.png" class="card-img-top" alt="Blog 5 - Expand Your Horizon">
+                    <div class="card-body">
+                        <h3 class="card-title">Expand Your Horizon with Refurbished Laptops</h3>
+                        <p class="date card-text text-muted">March 5, 2025</p>
+                        <p class="card-text">Looking for a high-performance laptop without breaking the bank? Refurbished laptops offer a budget-friendly alternative to new devices while maintaining top-notch functionality...</p>
+                    </div>
+                    <div class="blog-card-footer card-footer text-muted text-center">Posted by: Admin | Category: Eco-Friendly</div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="blog-card card h-100">
+                    <img src="Things.png" class="card-img-top" alt="Blog 6 - Reduce E-Waste">
+                    <div class="card-body">
+                        <h3 class="card-title">How Refurbished Goods Help Reduce E-Waste</h3>
+                        <p class="date card-text text-muted">March 3, 2025</p>
+                        <p class="card-text">E-waste is one of the fastest-growing environmental threats, with millions of electronic devices discarded every year. Choosing refurbished electronics significantly reduces this waste...</p>
+                    </div>
+                    <div class="blog-card-footer card-footer text-muted text-center">Posted by: Admin | Category: Eco-Friendly</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <img src="assets/logo.png" alt="Gadget On Budget Logo" class="footer-logo mb-3" style="max-height: 40px;">
+            <div class="footer-links mb-3">
+                <a href="#home" class="text-muted mx-2">Home</a>
+                <a href="shop.html" class="text-muted mx-2">Shop</a>
+                <a href="about.html" class="text-muted mx-2">About</a>
+                <a href="contact.html" class="text-muted mx-2">Contact</a>
+                <a href="cart.html" class="text-muted mx-2">Cart</a>
+                <a href="orders.html" class="text-muted mx-2">Orders</a>
+            </div>
+            <div class="app-download mb-3">
+                <p class="text-muted mb-2">Download Our App</p>
+                <a href="https://play.google.com/store/apps/details?id=com.gadgetonbudget" target="_blank" class="btn btn-dark me-2">
+                    <i class="bi bi-google-play me-1"></i> Play Store
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank" class="btn btn-dark">
+                    <i class="bi bi-apple me-1"></i> App Store
+                </a>
+            </div>
+            <p class="text-muted">© 2025 Gadget On Budget. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
