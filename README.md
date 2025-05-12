@@ -1,2 +1,2 @@
 # Gadget-On-Budget
-Frront end (Sale Of electronic Goods)
+Front end (Sale Of electronic Goods)
